@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YouTube Saman uc sayti</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Premium xizmatlar — professional jamoa.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="saman.jpg.jpg" alt="Kompaniya logosi" class="logo">
+        <span class="brand-text">uc haqida</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menyu" aria-expanded="false">
+        <span class="hamb"></span>
+      </button>
+
+      <nav class="nav">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact" class="btn-outline">Aloqa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Biz bilan <span class="accent">oson va tez</span>ozingiz uchun uc oling</h1>
+          <p class="lead">oson va tez uc olish.</p>
+          <div class="hero-actions">
+            <a href="#services" class="btn-primary">Xizmatlarimiz</a>
+            <a href="#contact" class="btn-secondary">hozirda pubg mobile danat</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <div class="gold-card">pubg uc</div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Xizmatlar</h2>
+        <p class="section-sub">Bizning asosiy pubg mobile ga uc obermiz</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>YouTube Saman</h3>
+            <p>Pubg mobile uc</p>
+          </article>
+
+          <article class="card">
+            <h3>Veb-sayt & Raqamli yechimlar</h3>
+            <p>uc saytlar, e-commerce, CMS va texnik qollab-quvvatlash.</p>
+          </article>
+
+          <article class="card">
+            <h3>Marketing strategiyasi</h3>
+            <p>Raqamli marketing, SEO, ijtimoiy tarmoqlar va reklama kampaniyalari.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section section-light">
+      <div class="container about-grid">
+        <div>
+          <h2>Biz haqimizda</h2>
+          <p>tez oson uc olish</p>
+          <ul class="about-list">
+            <li>5+ yil tajriba</li>
+            <li>Harakatga yonaltirilgan natijalar</li>
+            <li>Mijozlar bilan yaqin hamkorlik</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><strong>250+</strong><span>loyiha</span></div>
+          <div class="stat"><strong>25%</strong><span>mamnun mijozlar</span></div>
+          <div class="stat"><strong>15</strong><span>mutaxassis</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section section-dark contact">
+      <div class="container">
+        <h2 class="section-title">Bog'lanish</h2>
+        <p>Telefon yoki email orqali murojaat qiling — biz tez orada javob beramiz.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Kontaktlar</h3>
+            <p>Email: <a href="mailto:info@biznes.uz">info@pmhero790@gmail.com</a></p>
+            <p>Telefon: +998 95 049 66 01</p>
+            <p>Manzil: Sirdaryo, O'zbekiston</p>
+          </div>
+
+          <form class="contact-form" action="#" onsubmit="alert('Form yuborildi (demo).'); return false;">
+            <label>
+              Ism
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Xabar
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn-primary" type="submit">Yuborish</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Bizning Kompaniya. Barcha huquqlar himoyalangan.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Telegram">TG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+      toggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
